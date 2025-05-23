@@ -7,6 +7,8 @@ import Alert from "../ui/Alert";
 import ComicsList from "./ComicsList";
 
 export default function Main() {
+  const hasMessage = false;
+  let message;
   return (
     <main>
       <section id="jumbotron">
@@ -14,7 +16,14 @@ export default function Main() {
       </section>
       <section id="main-content">
         <div className="container">
-          <Alert type="danger" bgColor="green" text="Hello World" />
+          {hasMessage && (
+            <Alert
+              type="danger"
+              bgColor="green"
+              text={message || "Hello world"}
+            />
+          )}
+
           <ComicsList />
         </div>
       </section>
