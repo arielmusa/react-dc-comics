@@ -3,12 +3,14 @@ import dcMerch from "../assets/img/buy-comics-merchandise.png";
 import subscription from "../assets/img/buy-comics-subscriptions.png";
 import comicShop from "../assets/img/buy-comics-shop-locator.png";
 import dcPowerVisa from "../assets/img/buy-dc-power-visa.svg";
+import Alert from "./ui/Alert";
 
 export default function Main() {
   return (
     <main>
       <section id="main-content">
         <div className="container">
+          <Alert type="danger" bgColor="green" text="Hello World" />
           <div>Content goes here</div>
         </div>
       </section>
