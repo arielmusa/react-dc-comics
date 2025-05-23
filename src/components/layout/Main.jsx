@@ -1,17 +1,21 @@
-import digitalComics from "../assets/img/buy-comics-digital-comics.png";
-import dcMerch from "../assets/img/buy-comics-merchandise.png";
-import subscription from "../assets/img/buy-comics-subscriptions.png";
-import comicShop from "../assets/img/buy-comics-shop-locator.png";
-import dcPowerVisa from "../assets/img/buy-dc-power-visa.svg";
-import Alert from "./ui/Alert";
+import digitalComics from "../../assets/img/buy-comics-digital-comics.png";
+import dcMerch from "../../assets/img/buy-comics-merchandise.png";
+import subscription from "../../assets/img/buy-comics-subscriptions.png";
+import comicShop from "../../assets/img/buy-comics-shop-locator.png";
+import dcPowerVisa from "../../assets/img/buy-dc-power-visa.svg";
+import Alert from "../ui/Alert";
+import ComicsList from "./ComicsList";
 
 export default function Main() {
   return (
     <main>
+      <section id="jumbotron">
+        <img src="src/assets/img/jumbotron.jpg" alt="" />
+      </section>
       <section id="main-content">
         <div className="container">
           <Alert type="danger" bgColor="green" text="Hello World" />
-          <div>Content goes here</div>
+          <ComicsList />
         </div>
       </section>
 

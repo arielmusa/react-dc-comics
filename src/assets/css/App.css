@@ -53,8 +53,11 @@ img {
 .col-1-4 {
   width: calc(100% / 4);
 }
-.col-1-4 {
+.col-1-5 {
   width: calc(100% / 5);
+}
+.col-1-6 {
+  width: calc(100% / 6);
 }
 
 .alert {
@@ -65,9 +68,7 @@ img {
   border: 3px black solid;
   border-radius: 5px;
   max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  top: 50px;
+  margin: 20px auto;
 }
 
 .alert.success {
@@ -80,6 +81,14 @@ img {
   color: red;
   border-color: red;
   background-color: white;
+}
+
+.btn-primary {
+  background-color: #0082f9;
+  border: 1px #0082f9 solid;
+  padding: 8px 40px;
+  color: white;
+  font-weight: bold;
 }
 
 /****** HEADER ******/
@@ -119,10 +128,49 @@ header li.active::before {
 
 /****** MAIN ******/
 
+#jumbotron {
+  max-height: 350px;
+  overflow: hidden;
+}
 #main-content {
   background-color: #1c1c1c;
   color: white;
-  height: 300px;
+  padding: 50px 0;
+  position: relative;
+}
+
+#main-content .row {
+  justify-content: center;
+  align-items: center;
+}
+
+#main-content #tag {
+  position: absolute;
+  background-color: #0082f9;
+  top: 0;
+  left: 10%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-weight: bold;
+}
+
+#main-content .card {
+  aspect-ratio: 3/4;
+}
+
+#main-content .card .card-image {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+#main-content .card .card-image img {
+  object-fit: cover;
+}
+
+#main-content .card .card-title {
+  font-size: 10px;
+  padding-top: 8px;
+  text-transform: uppercase;
 }
 
 main #icons-banner-section {
